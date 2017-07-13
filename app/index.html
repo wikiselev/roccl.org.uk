@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>St Ephraim Orthodox Parish, Cambridge, UK</title>
+    <title>St Alban Orthodox Parish, Luton, UK</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -18,24 +18,24 @@
 
     <!-- social networks metadata -->
     <!-- for Google -->
-    <meta name="description" content="We are an Orthodox Parish in Cambridge, UK of the Diocese of Sourozh - the diocese of the Russian Orthodox Church which covers the British Isles." />
+    <meta name="description" content="We are an Orthodox Parish in Luton, UK of the Diocese of Sourozh - the diocese of the Russian Orthodox Church which covers the British Isles." />
     <meta name="keywords" content="" />
 
     <meta name="author" content="" />
     <meta name="copyright" content="" />
-    <meta name="application-name" content="St Ephraim Orthodox Parish, Cambridge, UK" />
+    <meta name="application-name" content="St Alban Orthodox Parish, Luton, UK" />
 
     <!-- for Facebook -->          
-    <meta property="og:title" content="St Ephraim Orthodox Parish, Cambridge, UK" />
+    <meta property="og:title" content="St Alban Orthodox Parish, Luton, UK" />
     <meta property="og:type" content="books.book" />
     <meta property="og:image" content="http://hemberg-lab.github.io/scRNA.seq.course/figures/RNA-Seq_workflow-5.pdf.jpg" />
     <meta property="og:url" content="http://www.saintephraim.org.uk/" />
-    <meta property="og:description" content="We are an Orthodox Parish in Cambridge, UK of the Diocese of Sourozh - the diocese of the Russian Orthodox Church which covers the British Isles." />
+    <meta property="og:description" content="We are an Orthodox Parish in Luton, UK of the Diocese of Sourozh - the diocese of the Russian Orthodox Church which covers the British Isles." />
 
     <!-- for Twitter -->          
     <meta name="twitter:card" content="" />
-    <meta name="twitter:title" content="St Ephraim Orthodox Parish, Cambridge, UK" />
-    <meta name="twitter:description" content="We are an Orthodox Parish in Cambridge, UK of the Diocese of Sourozh - the diocese of the Russian Orthodox Church which covers the British Isles." />
+    <meta name="twitter:title" content="St Alban Orthodox Parish, Luton, UK" />
+    <meta name="twitter:description" content="We are an Orthodox Parish in Luton, UK of the Diocese of Sourozh - the diocese of the Russian Orthodox Church which covers the British Isles." />
     <meta name="twitter:image" content="http://www.saintephraim.org.uk/images/s0815009_original.7cf00c54.jpg" />
 
   </head>
@@ -66,9 +66,6 @@
               <li ng-class="{ active: isActive('/about')}"><a ng-href="#/about" data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
               <li ng-class="{ active: isActive('/address')}"><a ng-href="#/address" data-toggle="collapse" data-target=".navbar-collapse.in">Address</a></li>
               <li ng-class="{ active: isActive('/services')}"><a ng-href="#/services" data-toggle="collapse" data-target=".navbar-collapse.in">Services</a></li>
-              <li ng-class="{ active: isActive('/helpers')}"><a ng-href="#/helpers" data-toggle="collapse" data-target=".navbar-collapse.in">Helpers</a></li>
-              <li ng-class="{ active: isActive('/building')}"><a ng-href="#/building" data-toggle="collapse" data-target=".navbar-collapse.in">Building</a></li>
-              <li ng-class="{ active: isActive('/donations')}"><a ng-href="#/donations" data-toggle="collapse" data-target=".navbar-collapse.in">Donations</a></li>
               <li ng-class="{ active: isActive('/contacts')}"><a ng-href="#/contacts" data-toggle="collapse" data-target=".navbar-collapse.in">Contacts</a></li>
 <!--               <li> 
                 <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">
@@ -81,7 +78,7 @@
       </div>
       <div class="wide">
         <!-- <div class="col-xs-1 line"><hr></div> -->
-        <div class="col-md-12 logo">St Ephraim Orthodox Parish</div>
+        <div class="col-md-12 logo">St Alban Orthodox Parish</div>
         <!-- <div class="col-xs-1 line"><hr></div> -->
       </div>
     </div>
@@ -102,62 +99,6 @@
       <br><br>
     </div>
 
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-        <div class="col-sm-4 col-xs-6">
-        <p>Subscribe to our mailing list:</p>
-        <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl">
-          <div ng-hide="mailchimp.result === 'success'">
-            <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='wikiselev'">
-            <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us8'">
-            <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='840b8b1b9f728693ad2c96253'">
-            <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='f341fb8827'">
-            <input type="text" name="fname" ng-model="mailchimp.FNAME" placeholder="First name">
-            <br>
-            <input type="text" name="lname" ng-model="mailchimp.LNAME" placeholder="Last name">
-            <br>
-            <input type="email" name="email" ng-model="mailchimp.EMAIL" placeholder="Email address" required>
-            <br><br>
-            <button ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">Subscribe</button>
-          </div>
-
-          <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
-          <div ng-show="mailchimp.result === 'error'" ng-cloak>
-            <span ng-bind-html="mailchimp.errorMessage"></span>
-          </div>
-
-          <!-- Show success message if MailChimp returned successfully. -->
-          <div ng-show="mailchimp.result === 'success'" ng-cloak>
-            <span ng-bind-html="mailchimp.successMessage"></span>
-          </div>
-        </form>
-        </div>
-        <div class="hidden-xs col-sm-4">
-          <img class="img center-block" src="images/cross.png"/>
-        </div>
-        <div class="hidden-xs col-sm-4 col-xs-6">
-        <p align="right">
-        Registered Charity <a href="http://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1111702&SubsidiaryNumber=0">#1111702</a>
-        </p>
-        <p align="right">
-        <a href="mailto:webmaster@saintephraim.org.uk" target="_blank">Any questions?</a>
-        </p>
-        <br><br>
-        <div align="right">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="4ZP4P26B8ZCEA">
-          <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal # 14 The safer, easier way to pay online.">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-          </form>
-        </div>
-        </div>
-        </div>
-      </div>
-    </div>
-
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -165,7 +106,7 @@
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-81646204-1');
+       ga('create', 'UA-102487987-1');
        ga('send', 'pageview');
     </script>
 
